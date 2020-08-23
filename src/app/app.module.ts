@@ -10,6 +10,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { AddTouristComponent } from './tourist/add-tourist/add-tourist.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddCityComponent } from './city/add-city/add-city.component';
+import { DeleteTouristComponent } from './tourist/delete-tourist/delete-tourist.component';
+import { TouristInfoComponent } from './tourist/tourist-info/tourist-info.component';
+import { EditTouristComponent } from './tourist/edit-tourist/edit-tourist.component';
+import { EditCityComponent } from './city/edit-city/edit-city.component';
+import { CityInfoComponent } from './city/city-info/city-info.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +23,11 @@ import { AddCityComponent } from './city/add-city/add-city.component';
     ListTouristComponent,
     AddTouristComponent,
     AddCityComponent,
+    DeleteTouristComponent,
+    TouristInfoComponent,
+    EditTouristComponent,
+    EditCityComponent,
+    CityInfoComponent,
 
   
   ],

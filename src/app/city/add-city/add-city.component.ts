@@ -16,12 +16,10 @@ export class AddCityComponent implements OnInit {
     this.cityForm=new FormGroup({
       name: new FormControl(),
       id: new FormControl(),
-      creditCard: new FormControl(),
-      destiny:new FormControl(),
-      estimate: new FormControl(),
-      travelFrequency: new FormControl(),
-      idType: new FormControl(),
-      dob: new FormControl() 
+      bestHotel: new FormControl(),
+      touristicSite:new FormControl(),
+      population: new FormControl(),
+      
 
     })
   }

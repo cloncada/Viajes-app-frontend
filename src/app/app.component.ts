@@ -26,4 +26,9 @@ this.router.navigate(["listarTuristas"]);
     this.router.navigate(["anadirTurista"]);
 
   }
+  addCity(){
+
+    this.router.navigate(["anadirCiudad"]);
+
+  }
 }

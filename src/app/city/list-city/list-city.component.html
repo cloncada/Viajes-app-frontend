@@ -21,7 +21,7 @@
                 <tbody>
                     <tr *ngFor="let city of cities" >
 
-                        <th>{{city.id}}</th>
+                        <th><a (click)="inspectCity(city.id)">{{city.id}}</a></th>
                         <th>{{city.name}}</th>
                         <th>{{city.bestHotel}}</th>
                         <th>{{city.population}}</th>

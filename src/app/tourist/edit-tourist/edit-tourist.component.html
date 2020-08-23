@@ -1,0 +1,66 @@
+<div class="touristForm">
+    <form [formGroup]="touristForm"  (ngSubmit)="onSubmit()" class="form-horizontal" >
+      
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Añadir turista</h3>
+            </div>
+            <div class="panel-body">
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="fullName" required> Id</label>
+                <div class="col-sm-8">
+                  <input id="fullName" type="text" class="form-control" formControlName="id" placeholder="tourist.id">
+                </div>
+              </div>
+        
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="name">Nombre</label>
+                <div class="col-sm-8">
+                  <input id="fullName" type="text" class="form-control" formControlName="name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="creditCard">Tarjeta de credito</label>
+                <div class="col-sm-8">
+                  <input id="creditCard" type="text" class="form-control" formControlName="creditCard">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="destino">Destino</label>
+                <div class="col-sm-8">
+                  <input id="email" type="text" class="form-control" formControlName="destiny">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="estimate">Presupuesto</label>
+                <div class="col-sm-8">
+                  <input id="email" type="text" class="form-control" formControlName="estimate">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="travelFrequency">Frecuencia de viaje</label>
+                <div class="col-sm-8">
+                  <input id="email" type="text" class="form-control" formControlName="travelFrequency">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="idType">Tipo de documento</label>
+                <div class="col-sm-8">
+                  <input id="email" type="text" class="form-control" formControlName="idType">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="dob">Fecha de nacimiento</label>
+                <div class="col-sm-8">
+                  <input id="dob" type="text" class="form-control" formControlName="dob">
+                </div>
+              </div>
+        
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" type="submit">Save</button>
+            </div>
+          </div>
+      
+      </form>
+    </div>

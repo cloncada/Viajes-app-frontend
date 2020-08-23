@@ -2,3 +2,20 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.touristForm{
+    left: 20%;
+    position: relative;
+    
+    }
+    .panel-title{
+    left: 30%;
+    position: relative;
+    
+    
+    }
+    .btn{
+        left: 30%;
+        position: relative;
+    
+    
+    }

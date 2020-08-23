@@ -35,4 +35,9 @@ error => {
  }
 )
   }
+  inspectCity(id: string){
+localStorage.setItem("idCity",id);
+this.router.navigate(["ciudad"]);
+
+  }
 }
