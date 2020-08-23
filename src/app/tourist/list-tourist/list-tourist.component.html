@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Turistas</h3>
+
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Destino</th>
+                        <th>Fecha de nacimiento</th>
+                        <th>Presupuesto </th>
+                        <th>Frecuencia de viaje</th>
+                        <th>Tipo de documento</th>
+                        <th>Tarjeta de credito?</th>
+
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr *ngFor="let tourist of tourists" class="text-center">
+
+                        <th>{{tourist.id}}</th>
+                        <th>{{tourist.name}}</th>
+                        <th>{{tourist.destiny}}</th>
+                        <th>{{tourist.dob}}</th>
+                        <th>{{tourist.estimate}}</th>
+                        <th>{{tourist.travelFrequency}}</th>
+                        <th>{{tourist.idType}}</th>
+                        <th>{{tourist.creditCard}}</th>
+
+                    </tr>
+
+                </tbody>
+
+
+
+            </table>
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+</div>

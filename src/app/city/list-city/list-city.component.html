@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Ciudades</h3>
+
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Mejor Hotel</th>
+                        <th>Poblacion</th>
+                        <th>Sitio Turistico </th>
+                    
+
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr *ngFor="let city of cities" >
+
+                        <th>{{city.id}}</th>
+                        <th>{{city.name}}</th>
+                        <th>{{city.bestHotel}}</th>
+                        <th>{{city.population}}</th>
+                        <th>{{city.touristicSite}}</th>
+                       
+
+                    </tr>
+
+                </tbody>
+
+
+
+            </table>
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+</div>
