@@ -9,6 +9,14 @@ export interface City {
   touristicSite:string;
   
 }
+export interface Reservation {
+  id: number;
+  city: string;
+  touristId: string;
+  date: string;
+  cityName: number;
+ 
+}
 @Component({
   selector: 'app-city-info',
   templateUrl: './city-info.component.html',
@@ -16,6 +24,7 @@ export interface City {
 })
 export class CityInfoComponent implements OnInit {
 city:City;
+reservations: Reservation[] = [];
   constructor(private service: ServiceService, private router: Router) { }
 
   ngOnInit(): void {
@@ -28,6 +37,16 @@ city:City;
         // this.alertService.error(JSON.stringify(error));
       }
     )
+    this.service.getReservations('http://localhost:8080/reservationsTourist/'+localStorage.getItem('idTourist')).subscribe((data: any) => {
+      this.reservations = JSON.parse(JSON.stringify(data));
+      console.log(this.reservations);
+    },
+      error => {
+        alert(JSON.stringify(JSON.parse(JSON.stringify(error)).error.message));
+        // this.alertService.error(JSON.stringify(error));
+      }
+    )
+
   }
   deleteTourist(){
     if(confirm('Quiere borrar esta ciudad?')){

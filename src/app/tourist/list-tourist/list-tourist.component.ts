@@ -42,7 +42,7 @@ export class ListTouristComponent implements OnInit {
 
 
 
-      console.log(this.tourists);
+      
     },
       error => {
         alert(JSON.stringify(JSON.parse(JSON.stringify(error)).error.message));

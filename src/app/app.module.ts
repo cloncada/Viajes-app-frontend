@@ -15,6 +15,7 @@ import { TouristInfoComponent } from './tourist/tourist-info/tourist-info.compon
 import { EditTouristComponent } from './tourist/edit-tourist/edit-tourist.component';
 import { EditCityComponent } from './city/edit-city/edit-city.component';
 import { CityInfoComponent } from './city/city-info/city-info.component';
+import { AddReservationComponent } from './reservation/add-reservation/add-reservation.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { CityInfoComponent } from './city/city-info/city-info.component';
     EditTouristComponent,
     EditCityComponent,
     CityInfoComponent,
+    AddReservationComponent,
 
   
   ],

@@ -8,6 +8,7 @@ import { TouristInfoComponent } from './tourist/tourist-info/tourist-info.compon
 import { EditTouristComponent } from './tourist/edit-tourist/edit-tourist.component';
 import { CityInfoComponent } from './city/city-info/city-info.component';
 import { EditCityComponent } from './city/edit-city/edit-city.component';
+import { AddReservationComponent } from './reservation/add-reservation/add-reservation.component';
 
 const routes: Routes = [
 {path:'listarCiudades',component:ListCityComponent},
@@ -17,7 +18,8 @@ const routes: Routes = [
 {path:'turista',component:TouristInfoComponent},
 {path:'editarTurista',component:EditTouristComponent},
 {path:'ciudad',component: CityInfoComponent},
-{path:'editarCiudad',component:EditCityComponent}
+{path:'editarCiudad',component:EditCityComponent},
+{path:'anadirReservacion',component:AddReservationComponent}
 
 
 

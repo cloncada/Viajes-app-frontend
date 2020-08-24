@@ -23,7 +23,7 @@
                 <tbody>
                     <tr *ngFor="let tourist of tourists" class="text-center">
 
-                        <th><a (click)="inspectTourist(tourist.id)">{{tourist.id}}</a></th>
+                        <th class="link"><a (click)="inspectTourist(tourist.id)">{{tourist.id}}</a></th>
                         <th>{{tourist.name}}</th>
                         <th>{{tourist.destiny}}</th>
                         <th>{{tourist.dob}}</th>

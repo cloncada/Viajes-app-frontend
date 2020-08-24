@@ -1,3 +1,91 @@
-<p>{{city.id}}</p>
-<button (click)="deleteTourist()">Borrar Ciudad</button>
-<button (click)="editTourist()">Editar Ciudad</button>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Reservaciones</h3>
+
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th> ID Ciudad</th>
+                        <th>Nombre</th>
+                        <th>Mejor hotel</th>
+                        <th>Sitio Turistico</th>
+                        <th>Poblacion</th>
+                        
+
+                </thead>
+                <tbody>
+                    <tr >
+
+                        
+                        <th>{{city.id}}</th>
+                        <th>{{city.name}}</th>
+                        <th>{{city.bestHotel}}</th>
+                        <th>{{city.touristicSite}}</th>
+                        <th>{{city.population}}</th>
+                       
+
+                    </tr>
+
+                </tbody>
+
+
+
+            </table>
+
+
+
+        </div>
+
+    </div>
+
+
+    
+</div>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Reservaciones</h3>
+
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Reservacion ID</th>
+                        <th>Id turista</th>
+                        <th>Fecha</th>
+                        </tr>
+
+                </thead>
+                <tbody>
+                    <tr *ngFor="let reservation of reservations">
+
+                        
+                        <th>{{reservation.id}}</th>
+                        <th>{{reservation.touristId}}</th>
+                        <th>{{reservation.date}}</th>
+                       
+
+                    </tr>
+
+                </tbody>
+
+
+
+            </table>
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+</div>
+<button  type="button" class="btn btn-primary" (click)="deleteTourist()">Borrar Ciudad</button>
+<button  type="button" class="btn btn-primary" (click)="editTourist()">Editar Ciudad</button>

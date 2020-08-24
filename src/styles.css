@@ -16,6 +16,18 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     .btn{
         left: 30%;
         position: relative;
+        margin: 20px;
     
     
     }
+    .control-label{
+        color: red;
+
+    }
+    .panel-title{
+        color: red;
+        
+
+
+    }
+ 

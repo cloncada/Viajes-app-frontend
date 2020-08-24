@@ -1,3 +1,97 @@
-<p>{{tourist.id}}</p>
-<button (click)="deleteTourist()">Borrar Turista</button>
-<button (click)="editTourist()">Editar Turista</button>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Reservaciones</h3>
+
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th> ID</th>
+                        <th>Nombre</th>
+                        <th>Tarjeta de credito</th>
+                        <th>Destino</th>
+                        <th>estimado</th>
+                        <th>Frecuencia de viaje</th>
+                        <th>Tipo de identificacion</th>
+                        <th>Fecha de nacimiento</th>
+                        </tr>
+
+                </thead>
+                <tbody>
+                    <tr >
+
+                        
+                        <th>{{tourist.id}}</th>
+                        <th>{{tourist.name}}</th>
+                        <th>{{tourist.creditCard}}</th>
+                        <th>{{tourist.destiny}}</th>
+                        <th>${{tourist.estimate}}</th>
+                        <th>{{tourist.travelFrequency}}</th>
+                        <th>{{tourist.idType}}</th>
+                        <th>{{tourist.dob}}</th>
+
+                    </tr>
+
+                </tbody>
+
+
+
+            </table>
+
+
+
+        </div>
+
+    </div>
+
+
+    
+</div>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Reservaciones</h3>
+
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Reservacion ID</th>
+                        <th>Ciudad</th>
+                        <th>Fecha</th>
+                        </tr>
+
+                </thead>
+                <tbody>
+                    <tr *ngFor="let reservation of reservations">
+
+                        
+                        <th>{{reservation.id}}</th>
+                        <th>{{reservation.city}}</th>
+                        <th>{{reservation.date}}</th>
+                       
+
+                    </tr>
+
+                </tbody>
+
+
+
+            </table>
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+</div>
+<button type="button" class="btn btn-primary" (click)="deleteTourist()">Borrar Turista</button>
+<button type="button" class="btn btn-primary" (click)="editTourist()">Editar Turista</button>
+<button type="button" class="btn btn-primary" (click)="addReservation()">Añadir reservacion</button>
