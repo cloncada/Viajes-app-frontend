@@ -28,7 +28,7 @@ export class ServiceService {
   }
   deleteTourist(id: string) {
 
-    return this.http.delete('http://localhost:8080/delete/'+id);
+    return this.http.delete('http://localhost:8080/delete/' + id);
 
   }
   getTourist(url: string) {
@@ -36,11 +36,16 @@ export class ServiceService {
     return this.http.get(url);
 
   }
-  deleteCity(id:string){
-    return this.http.delete('http://localhost:8080/deleteCity/'+id);
+  deleteCity(id: string) {
+    return this.http.delete('http://localhost:8080/deleteCity/' + id);
 
   }
   getCity(url: string) {
+
+    return this.http.get(url);
+
+  }
+  getReservations(url: string) {
 
     return this.http.get(url);
 

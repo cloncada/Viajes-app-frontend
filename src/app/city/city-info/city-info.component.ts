@@ -19,7 +19,7 @@ city:City;
   constructor(private service: ServiceService, private router: Router) { }
 
   ngOnInit(): void {
-    this.service.getCity('http://localhost:8080/city/' + localStorage.getItem('idTourist')).subscribe((res: any) => {
+    this.service.getCity('http://localhost:8080/city/' + localStorage.getItem('idCity')).subscribe((res: any) => {
       this.city = JSON.parse(JSON.stringify(res));
       console.log(this.city);
     },
@@ -40,6 +40,6 @@ city:City;
   }
   editTourist(){
 
-
+    this.router.navigate(["editarCiudad"]);
   }
 }
